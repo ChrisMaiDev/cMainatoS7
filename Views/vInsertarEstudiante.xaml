@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cMainatoS7.Views.vInsertarEstudiante"
+             Title="vInsertarEstudiante">
+    <VerticalStackLayout>
+        <Label 
+    Text="Agregar Estudiante"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" />
+
+
+        <Entry x:Name="txtNombre"
+       Placeholder="Ingrese el Nombre"></Entry>
+        <Entry x:Name="txtApellido"
+       Placeholder="Ingrese el Apellido"></Entry>
+        <Entry x:Name="txtEdad"
+       Placeholder="Ingrese la Edad"
+       Keyboard="Numeric"
+       MaxLength="3"></Entry>
+
+        <Button x:Name="btnGuardar"
+        Text="Guardar"
+        Clicked="btnGuardar_Clicked"
+            Margin="20"></Button>
+    </VerticalStackLayout>
+</ContentPage>
